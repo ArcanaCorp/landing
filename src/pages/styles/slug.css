@@ -1,0 +1,105 @@
+.__app {
+    width: 100dvw;
+    height: 100dvh;
+    overflow-y: auto;
+    padding: 1rem 0;
+    overflow-x: hidden;
+}
+
+.__app::-webkit-scrollbar {
+    display: none;
+}
+
+.__app .__content {
+    width: 90%;
+    margin: auto;
+}
+
+
+.__app .__content .__header {
+    width: 100%;
+}
+
+.__app .__content .__header .__figure {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.__app .__content .__header .__figure img {
+    display: none;
+}
+
+.__app .__content .__header .__name {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.__app .__content .__header .__parragraph {
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-gray);
+}
+
+.__app .__content .__main {
+    padding: 1rem 0;
+}
+
+.__app .__content .__main .__rdds {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.__app .__content .__main .__rdds li a {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    border-radius: 100px;
+    background-color: var(--color-dark);
+}
+
+.__app .__content .__main .__rdds li a .tabler-icon {
+    stroke-width: 1.2;
+    stroke: var(--color-white);
+}
+
+.__app .__content .__main .__categories {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.__app .__content .__main .__categories::-webkit-scrollbar {
+    display: none;
+}
+
+.__app .__content .__main .__categories li {
+    font-size: .8rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    background-color: var(--color-secondary);
+}
+
+.__app .__content .__main .__categories li.--active {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+@media (min-width: 1024px) {
+
+    .__app .__content {
+        width: 60%;
+    }
+
+}

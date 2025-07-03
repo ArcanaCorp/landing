@@ -1,0 +1,69 @@
+.__product {
+    width: 100%;
+    display: flex;
+    gap: .2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+}
+
+.__product .__product_img {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    background-color: var(--color-background);
+}
+
+.__product .__product_txt {
+    padding: 1rem .5rem 1rem 1rem;
+}
+
+.__product .__product_txt .__text {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+    color: var(--color-gray);
+}
+
+.__product .__product_txt .__prices {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.__product .__product_txt .__prices p {
+    padding: .2rem .4rem;
+    border-radius: .5rem;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.__product .__product_txt .__product_controls {
+    width: 100%;
+    display: flex;
+}
+
+.__product .__product_txt .__product_controls button {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border-radius: 100px;
+    background-color: var(--color-dark);
+}
+
+.__product .__product_txt .__product_controls button .tabler-icon {
+    width: 16px;
+    height: 16px;
+    stroke: var(--color-white);
+}
+
+.__product .__product_txt .__product_controls .__num {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+}
