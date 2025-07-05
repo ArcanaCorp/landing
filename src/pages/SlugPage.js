@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import './styles/slug.css'
 import { IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp } from "@tabler/icons-react";
 import Products from "../components/Products";
+import NotPage from "./NotPage";
 
 export default function SlugPage () {
 
@@ -33,11 +34,18 @@ export default function SlugPage () {
 
     if (loading) return <h1>Cargando...</h1>
 
+    if (!info) return <NotPage/>
+
+    const desc = info?.name ? `${info?.name} | ${info?.text}` : 'Con Ándale Socio puedes mostrar tu negocio en línea, compartir tu catálogo y recibir pedidos fácilmente por WhatsApp.'
+
     return (
 
         <>
 
             <Helmet>
+                <meta name="description" content={`${info?.name}`} />
+                <meta property="og:title" content={`${info?.name}`} />
+                <meta property="og:description" content={desc} />
                 <title>{info?.name} | {info?.text} | Ándale Socio | Muestra tu negocio y recibe pedidos por WhatsApp</title>
             </Helmet>
 
